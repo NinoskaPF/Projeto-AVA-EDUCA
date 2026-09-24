@@ -1,4 +1,4 @@
-import alunos from "../dados/listagem-alunos";
+import alunos from "../dados/listagem-alunos.js";
 
 function cadastrarAluno(aluno) {
     try {
