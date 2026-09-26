@@ -1,15 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dashboard - AVA-EDUCA +</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./dashboard.css">
 </head>
 <body>
-    <main>
-        <h1>DASHBOARD</h1>
-        <p>login ok</p>
-    </main>
-    
+<header>
+    <div class="logo-area">
+    <img src="../assets/images/logo-ava-educa.png" alt="Logo AVA-EDUCA+">
+
+    <h1>AVA-EDUCA+</h1>
+    </div>
+
+    <p id="usuario-logado"></p>
+
+</header>
+<div class="layout">
+<aside class="menu-lateral">
+
+    <nav>
+
+        <button type="button" id="btn-dashboard">
+            🏠 Dashboard
+        </button>
+
+        <button type="button" id="btn-cursos" disabled>
+            📚 Cursos
+        </button>
+
+        <button type="button" id="btn-alunos">
+            👨‍🎓 Cadastro de Aluno
+        </button>
+
+        <button type="button" id="btn-sair">
+            🚪 Sair
+        </button>
+
+    </nav>
+
+</aside>
+<main>
+
+    <h2>Dashboard</h2>
+
+    <section id="cards-cursos">
+
+    </section>
+
+</main>
+</div>
+<script type="module" src="./dashboard.js"></script>
+<script type="module" src="../js/geral.js"></script>
 </body>
+
 </html>
