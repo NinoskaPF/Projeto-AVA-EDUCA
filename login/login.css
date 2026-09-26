@@ -1,52 +1,118 @@
-main {
-    width: 100%;
-    max-width: 28rem;
-}
-body {
+.pagina-login {
     min-height: 100vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
-}
-h1{
-    text-align: center;
-}
-form {
-    width: 100%;
 
+    background-color: #f4f7fb;
+}
+
+.pagina-login main {
+    width: 100%;
+    max-width: 28rem;
+
+    padding: 35px;
+
+    background-color: white;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.pagina-login h1{
+    margin: 0 0 10px;
+    text-align: center;
+    color: #0d47a1;
+    font-size: 1.8rem;
+}
+
+.pagina-login h2 {
+    margin: 0 0 25px;
+
+    text-align: center;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pagina-login form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-
-form div {
+.pagina-login form div {
     display: flex;
     flex-direction: column;
+
     gap: 0.4rem;
 }
+.pagina-login label {
+    color: #333;
+    font-size: o.95rem;
+    font-weight: 600;
+}
+.pagina-login input {
 
-input {
     width: 100%;
-    padding: 0.75rem;
+    padding: 12px 15px;
+
+    border: 1px solid #c5d3e8;
+    border-radius: 8px;
+
+    background-color: whitesmoke;
+    color: #333;
+
     font-size: 1rem;
+    outline: none;
+
+    transition: 
+    border-color 0.2s ease, 
+    box-shadow 0.2s ease;
 }
 
-button {
-    width: 100%;
-    padding: 0.75rem;
+.pagina-login input:focus {
+    border-color: #0d47a1;
+    box-shadow: 0 0 0 3px rgba(13, 71, 161, 0.15);
+}
+.pagina-login button {
+    width:100%;
+    padding: 12px 15px;
+
+    border: none;
+    border-radius: 8px;
+    background-color: #0d47a1;
+    color: white;
     font-size: 1rem;
+    font-weight: 600;
+
     cursor: pointer;
+
+    transition: 
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
-#esqueci-senha {
+.pagina-login button:active {
+    transform: translateY(1px);
+}
+.pagina-login #esqueci {
+text-align: center;
+color: #0d47a1;
+font-size: 0.9rem;
+text-decoration: none;
+}
+.pagina-login #esqueci:hover{
+    text-decoration: underline;
+}
+.pagina-login #mensagem {
+    margin: 0;
+    color:#b71c1c;
+    font-size: 0.9rem;
     text-align: center;
 }
-
-@media (min-width: 768px) {
-
-    main {
+@media (min-width: 768px){
+    .pagina-loginmain{
         max-width: 30rem;
     }
-
 }
