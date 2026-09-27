@@ -1,0 +1,98 @@
+main {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+main h2 {
+    margin-bottom: 25px;
+    color: #0d47a1;
+}
+
+#form-aluno {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.10);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#form-aluno div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#form-aluno label {
+    color: #333;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+#form-aluno input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #c5d3e8;
+    border-radius: 8px;
+    background-color: white;
+    color: #333;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#form-aluno input:focus {
+    border-color: #0d47a1;
+    box-shadow: 0 0 0 3px rgba(13, 71, 161, 0.15);
+}
+
+#form-aluno h3 {
+    margin: 10px 0 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #c5d3e8;
+    color: #0d47a1;
+    font-size: 1.1rem;
+}
+
+#form-aluno input[readonly] {
+    background-color: #f4f7fb;
+}
+
+#form-aluno button {
+    width: fit-content;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0d47a1;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    align-self: center;
+
+}
+
+#form-aluno button:hover {
+    background-color: #1565c0;
+}
+
+#mensagem {
+    margin: 0;
+    text-align: center;
+    color: #b71c1c;
+}
+
+@media (max-width: 768px) {
+
+    main {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    #form-aluno {
+        padding: 20px;
+    }
+
+}
