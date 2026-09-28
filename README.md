@@ -70,8 +70,6 @@ Criar uma plataforma web simples e intuitiva para facilitar a organização de i
 ---
 
 ## 📁 Estrutura do projeto
-
-```text
 ava-educa/
 │
 ├── assets/
