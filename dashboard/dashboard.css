@@ -34,3 +34,25 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
 
+@media (max-width: 768px) {
+
+    #cards-cursos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .card-curso img {
+        height: 100px;
+    }
+
+    .card-curso h2 {
+        font-size: 0.9rem;
+        margin: 10px 10px 8px;
+    }
+
+    .card-curso p {
+        font-size: 0.75rem;
+        margin: 5px 10px;
+    }
+}
