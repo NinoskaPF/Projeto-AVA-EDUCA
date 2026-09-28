@@ -68,52 +68,6 @@ Criar uma plataforma web simples e intuitiva para facilitar a organização de i
 - Limpeza dos dados quando necessário.
 
 ---
-
-## 📁 Estrutura do projeto
-```
-ava-educa/
-│
-├── assets/
-│   ├── images/
-│   └── icons/
-│
-├── cadastro-aluno/
-│   ├── cadastro-alun.html
-│   ├── cadastro-alun.css
-│   └── cadastro-alun.js
-│
-├── dashboard/
-│   ├── dashboard.html
-│   ├── dashboard.css
-│   └── dashboard.js
-│
-├── dados/
-│   ├── listagem-alunos.js
-│   ├── listagem-cursos.js
-│   └── listagem-usuarios.js
-│
-├── js/
-│   ├── app.js
-│   ├── auth.js
-│   ├── Aluno.js
-│   ├── alunos.js
-│   ├── cursos.js
-│   └── geral.js
-│
-├── login/
-│   ├── login.html
-│   ├── login.css
-│   └── login.js
-│
-├── css/
-│   └── style.css
-│
-├── index.html
-├── package.json
-└── README.md
-
----
-
 ## ▶️ Como executar
 
 ### 1. Clone o repositório
@@ -194,9 +148,53 @@ Com a evolução do projeto, algumas funcionalidades poderão ser incorporadas:
 
 O projeto já conta com a estrutura principal, autenticação, dashboard, navegação, integração com a API ViaCEP e cadastro de alunos.
 
+
+## 📁 Estrutura do projeto
+```
+ava-educa/
+│
+├── assets/
+│   ├── images/
+│   └── icons/
+│
+├── cadastro-aluno/
+│   ├── cadastro-alun.html
+│   ├── cadastro-alun.css
+│   └── cadastro-alun.js
+│
+├── dashboard/
+│   ├── dashboard.html
+│   ├── dashboard.css
+│   └── dashboard.js
+│
+├── dados/
+│   ├── listagem-alunos.js
+│   ├── listagem-cursos.js
+│   └── listagem-usuarios.js
+│
+├── js/
+│   ├── app.js
+│   ├── auth.js
+│   ├── Aluno.js
+│   ├── alunos.js
+│   ├── cursos.js
+│   └── geral.js
+│
+├── login/
+│   ├── login.html
+│   ├── login.css
+│   └── login.js
+│
+├── css/
+│   └── style.css
+│
+├── index.html
+├── package.json
+└── README.md
+
 ---
 
-## 👩‍💻 Autora
+👩‍💻 Autora
 
 **Ninoska Palmares**
 
