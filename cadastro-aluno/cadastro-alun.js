@@ -56,24 +56,35 @@ cep.addEventListener("blur", function () {
 formAluno.addEventListener("submit", function (evento) {
     evento.preventDefault();
 
+    document.getElementById("mensagem").textContent = "";
+
     const nome = document.getElementById("nome").value;
     const genero = document.getElementById("genero").value;
-    const dataNascimento = document.getElementById("dataNascimento").value;
+    const campoDataNascimento = document.getElementById("dataNascimento");
+    const dataNascimento = campoDataNascimento.value;
+
     const data = moment(dataNascimento, "YYYY-MM-DD", true);
     const dataMinima = moment("1900-01-01", "YYYY-MM-DD", true);
+    const dataLimiteIdade = moment().subtract(7, "years");
 
     if (!data.isValid()) {
-        document.getElementById("mensagem").textContent = "Data de nascimento inválida!";
+        document.getElementById("mensagem").textContent =
+            "Data de nascimento inválida!";
         return;
     }
+
     if (!data.isAfter(dataMinima)) {
-        document.getElementById("mensagem").textContent = "A data de nascimento deve ser posterior a 01/01/1900!";
+        document.getElementById("mensagem").textContent =
+            "A data de nascimento deve ser posterior a 01/01/1900!";
         return;
     }
-    if (!data.isBefore(moment(), "day")) {
-        document.getElementById("mensagem").textContent = "A data de nascimento deve ser anterior à data atual!";
+
+    if (data.isAfter(dataLimiteIdade, "day")) {
+        document.getElementById("mensagem").textContent =
+            "O aluno deve ter pelo menos 7 anos de idade!";
         return;
     }
+
 
     const cpf = document.getElementById("cpf").value;
     const cpfLimpo = cpf.replace(/\D/g, "");
@@ -96,15 +107,15 @@ formAluno.addEventListener("submit", function (evento) {
         return;
     }
     if (
-    !logradouro.value ||
-    !bairro.value ||
-    !cidade.value ||
-    !estado.value
-) {
-    document.getElementById("mensagem").textContent =
-        "Consulte um CEP válido antes de cadastrar o aluno!";
-    return;
-}
+        !logradouro.value ||
+        !bairro.value ||
+        !cidade.value ||
+        !estado.value
+    ) {
+        document.getElementById("mensagem").textContent =
+            "Consulte um CEP válido antes de cadastrar o aluno!";
+        return;
+    }
     const numero = document.getElementById("numero").value;
     const complemento = document.getElementById("complemento").value;
 
