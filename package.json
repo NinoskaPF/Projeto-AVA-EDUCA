@@ -1,0 +1,20 @@
+{
+  "name": "ava-educa",
+  "version": "1.0.0",
+  "description": "Sistema de gestão educacional AVA-Educa",
+  "type": "module",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": [
+    "javascript",
+    "html",
+    "css",
+    "educacao",
+    "ava"
+  ],
+  "author": "Ninoska Palmares",
+  "license": "MIT"
+}
