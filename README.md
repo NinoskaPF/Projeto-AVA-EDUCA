@@ -70,23 +70,44 @@ Criar uma plataforma web simples e intuitiva para facilitar a organização de i
 ---
 ## ▶️ Como executar
 
-### 1. Clone o repositório
+### 1. Clonar o repositório
 
-    git clone https://github.com/NinoskaPF/Projeto-AVA-EDUCA.git
+Abra o PowerShell e navegue até a pasta onde deseja salvar o projeto:
 
-### 2. Acesse a pasta
+cd C:\Users\SEU_USUARIO\OneDrive\Desktop
 
-    cd Projeto-AVA-EDUCA
+Depois, faça o clone do repositório:
 
-### 3. Execute o projeto
+git clone https://github.com/NinoskaPF/Projeto-AVA-EDUCA.git
 
-Como o projeto utiliza **ES Modules**, recomenda-se utilizar um servidor local.
+Entre na pasta do projeto:
 
-No Visual Studio Code, você pode utilizar a extensão **Live Server**.
+cd Projeto-AVA-EDUCA
+### Instalar as dependências
 
-### 4. Acesse a aplicação
+Com o projeto aberto no PowerShell, execute:
 
-Abra o arquivo **index.html** através do servidor local.
+npm install
+
+Esse comando instala as dependências necessárias para executar o projeto.
+
+### Executar o projeto
+
+Depois da instalação, execute:
+
+npm start
+
+O projeto será iniciado localmente.
+
+Em seguida, abra o endereço informado no terminal, normalmente:
+
+http://localhost:3000
+
+### Observação
+
+O projeto foi desenvolvido utilizando HTML, CSS e JavaScript, com utilização de módulos JavaScript (import / export default), sessionStorage, API ViaCEP e Moment.js.
+
+Para executar corretamente o projeto, é recomendado iniciar o ambiente pelo terminal e acessar o projeto através do endereço local informado pelo servidor.
 
 ---
 
