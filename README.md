@@ -83,7 +83,7 @@ git clone https://github.com/NinoskaPF/Projeto-AVA-EDUCA.git
 Entre na pasta do projeto:
 
 cd Projeto-AVA-EDUCA
-### Instalar as dependências
+### 2. Instalar as dependências
 
 Com o projeto aberto no PowerShell, execute:
 
@@ -91,7 +91,7 @@ npm install
 
 Esse comando instala as dependências necessárias para executar o projeto.
 
-### Executar o projeto
+### 3. Executar o projeto
 
 Depois da instalação, execute:
 
