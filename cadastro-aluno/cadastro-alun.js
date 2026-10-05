@@ -135,10 +135,13 @@ formAluno.addEventListener("submit", function (evento) {
         bairro.value
     );
     cadastrarAluno(aluno)
-        .then((mensagem) => {
-            document.getElementById("mensagem").textContent = mensagem;
-        })
-        .catch(function (erro) {
-            document.getElementById("mensagem").textContent = erro;
-        });
+    .then((mensagem) => {
+        document.getElementById("mensagem").textContent = mensagem;
+
+        formAluno.reset();
+        limparEndereco();
+    })
+    .catch(function (erro) {
+        document.getElementById("mensagem").textContent = erro;
+    });
 });
